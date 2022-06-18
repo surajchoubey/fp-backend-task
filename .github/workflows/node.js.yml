@@ -26,4 +26,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: npm install express dotenv axios chalk@4.0.0 mongoose googleapis node-cron
     - run: npm start
