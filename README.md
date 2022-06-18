@@ -20,8 +20,8 @@ chmod +x ./rundb.sh
 ### Storing into Database from Query
 
 For a certain query, 
-1. **q**(a query provided by user) 
-2. **delay** (no of seconds after the server should refetch the data default = 10s) 
+1. **q** (a query provided by user) 
+2. **delay** (default = 10, no of seconds after the server should refetch the data from YT API v3) 
 
 It uses YouTube API v3 to fetch latest videos and store them into the database.
 The above operation is executed with the same **query** after a fixed **delay** and it is store in the database.
@@ -32,8 +32,8 @@ The above operation is executed with the same **query** after a fixed **delay** 
 
 For a certain query, 
 1. **q** (a query provided by user)
-2. **page** (default = 1)
-3. **limit** (default = 5) 
+2. **page** (default = 1, what page of results supposed to fetch from database)
+3. **limit** (default = 5, how many results a page should contain) 
 
 It will provide results in reverse chronological order.
 
