@@ -13,9 +13,9 @@ const fetch_from_db = async (req, res) => {
             $title: { $search: query },
             $description: { $search: query }
         })
+        .sort({ published_at: desc })
         .skip(skip)
         .limit(limit)
-        .sort({ published_at: desc })
 
         res.status(200).send({
             success: true,
