@@ -5,7 +5,7 @@
 1. Clone the repository and install required node package modules
 
 ```
-https://github.com/surajchoubey/fp-backend-task/
+git clone https://github.com/surajchoubey/fp-backend-task/
 cd fp-backend-task/
 npm install
 ```
