@@ -61,12 +61,11 @@ const fetch_from_yt = async (req, res) => {
     try {
 
         const search_query = req.query.q
-        let N = 10, D = 10, i = 0
+        let D = 10
 
-        if (req.query.times) N = Math.min(10, parseInt(req.query.times))
         if (req.query.delay) D = Math.min(10, parseInt(req.query.delay))
 
-        cron.schedule(`*/${N} * * * * *`, () => {
+        cron.schedule(`*/${D} * * * * *`, () => {
 
             fetcher(search_query)
         });
